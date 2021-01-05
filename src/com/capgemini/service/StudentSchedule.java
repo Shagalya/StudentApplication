@@ -1,6 +1,6 @@
 package com.capgemini.service;
 import com.capgemini.beans.*;
-
+import java.util.*;
 public  class StudentSchedule {
 	
 	private Student[] studentArr = new Student[10];
@@ -21,9 +21,7 @@ public  class StudentSchedule {
 			System.out.println("RollNo : "+ studentArr[i].getRollNo());
 			System.out.println("Name : "+ studentArr[i].getName());
 			System.out.println("Courses : ");
-			for(int j=0; j < course2.length; j++) {
-				System.out.println(course2[j]+"\t");
-		    }
+				System.out.println(Arrays.toString(course2)+"\t");
 		}
 	  }
 	}
@@ -37,9 +35,7 @@ public  class StudentSchedule {
 			System.out.println("Name : "+ studentArr[i].getRollNo());
 			System.out.println("RollNo : "+ studentArr[i].getName());			
 			System.out.println("Courses : ");
-			for(int j=0; j < course2.length; j++) {
-				System.out.println(course2[j]);
-			}
+				System.out.println(Arrays.toString(course2));
 		}
 		else
 		{
@@ -57,9 +53,7 @@ public  class StudentSchedule {
 					System.out.println("RollNo : "+ studentArr[i].getRollNo());
 					System.out.println("Name : "+ studentArr[i].getName());
 					System.out.println("Courses : ");
-					for(int k=0; k < course2.length; k++) {
-						System.out.println(course2[k]+"\t");
-				    }		
+						System.out.println(Arrays.toString(course2));
 		     }
 			}
 		}
